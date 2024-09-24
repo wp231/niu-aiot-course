@@ -37,7 +37,7 @@
 
 ## 物聯網連線架構
 
-![](attachment/Pasted%20image%2020240922030008.png)
+![](../attachment/Pasted%20image%2020240922030008.png)
 
 1. **UE（User Equipment，設備）**
 
@@ -191,9 +191,9 @@
 [中華電信](https://www.cht.com.tw/home/enterprise/products-services/mobile/data/678)官方說明
 
 - APN: `internet.iot`
-	![](attachment/Clip_2024-09-22_16-42-25.png)
+	![](../attachment/Clip_2024-09-22_16-42-25.png)
 - 頻段設定: Band 8
-	![](attachment/Clip_2024-09-22_16-42-57.png)
+	![](../attachment/Clip_2024-09-22_16-42-57.png)
 
 ```py
 AT+QBAND=1,8						# 設定頻段
