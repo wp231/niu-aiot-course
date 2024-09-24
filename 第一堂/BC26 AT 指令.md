@@ -191,8 +191,11 @@
 [中華電信](https://www.cht.com.tw/home/enterprise/products-services/mobile/data/678)官方說明
 
 - APN: `internet.iot`
+
 	![](../attachment/Clip_2024-09-22_16-42-25.png)
+	
 - 頻段設定: Band 8
+
 	![](../attachment/Clip_2024-09-22_16-42-57.png)
 
 ```py
