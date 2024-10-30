@@ -48,8 +48,6 @@ void loop()
         float temperature, humidity;
         if (sensorHandler.readData(temperature, humidity))
         {
-            temperature = 25.0;
-            humidity = 50.0;
             Serial.print("攝氏溫度：");
             Serial.print(temperature - CorrectionTEMP);
             Serial.println(" °C");
