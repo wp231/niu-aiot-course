@@ -33,23 +33,40 @@ DSI2598+ 常見的損壞狀況，以及處理方法
 通過 USB 串口通訊器燒錄，這裡以 CH340 為例
 
 - 安裝 CH340 驅動
+
 	- 下載地址: [CH341SER.EXE - 南京沁恒微电子股份有限公司](https://www.wch.cn/download/ch341ser_exe.html)
+
 - 安裝燒錄軟體
+
 	- 官網下載: [STM32CubeProg](https://www.st.com/en/development-tools/st-link-v2.html#tools-software)
-	![](../attachment/Clip_2024-11-03_20-36-57.png)
+
+		![](../attachment/Clip_2024-11-03_20-36-57.png)
+
 - 下載燒錄檔案
+
 	- Github: [GitHub - rogerclarkmelbourne/STM32duino-bootloader: Bootloader for STM32F103 boards, for use with the Arduino\_STM32 repo and the Arduino IDE](https://github.com/rogerclarkmelbourne/STM32duino-bootloader)
+
 		![](../attachment/Clip_2024-11-03_20-40-36.png)
+
 - 燒錄接線
+
 	![](../attachment/Pasted%20image%2020241103203152.png)
+
 - 使用 STM32CubeProg 燒錄
 	- 連線至 STM32 (連接前需要按 Reset 鈕進行重製)
+
 		![](../attachment/Pasted%20image%2020241103204141.png)
+
 	- 燒錄
+
 		![](../attachment/Pasted%20image%2020241103204254.png)
+
 	- 選取燒錄檔案開始燒錄
+
 		![](../attachment/Pasted%20image%2020241103204300.png)
+
 - 燒錄完成
+
 	![](../attachment/Pasted%20image%2020241103204354.png)
 
 ## 供電 IC 損壞
@@ -62,18 +79,32 @@ DSI2598+ 常見的損壞狀況，以及處理方法
 
 1. 找出異常: 電表量測，根據接線圖從電源端開始量測，查找電壓異常變化點
 	- 理論 3.3V 的電壓點
+
 		![](../attachment/Pasted%20image%2020241103214301.png)
+
 	- 實際為 0.9V
+
 		![](../attachment/Pasted%20image%2020241103214535.png)
+
 	- 查找異常點的電路設計，找到影響該異常的 IC
 		- [DSI2598p](../使用者手冊/DSI2598P/dsi2598p.pdf) 和 [ME6211C](../使用者手冊/DSI2598P/ME6211.pdf) (供電 IC) 的原理圖
+
 			![](../attachment/Pasted%20image%2020241103220107.png)
+
 - 啟動電流觀察: 透過電流計觀察供電 IC 異常電流狀況
+
 	- 正常的啟動電流 0.03A
+
 		![](../attachment/Pasted%20image%2020241103221739.png)
+
 	- 異常的啟動電流 0.009A
+
 		![](../attachment/Pasted%20image%2020241103221854.png)
+
 	- 無法順利啟動強制供電 3.3V，電流**偏高**，可能是**供電 IC**造成漏電流
+
 		![](../attachment/Pasted%20image%2020241103222028.png)
+
 	- 拆除供電 IC，再次強制供電 3.3V，電流恢復正常
+
 		![](../attachment/Pasted%20image%2020241103222325.png)
