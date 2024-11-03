@@ -39,7 +39,7 @@ DSI2598+ 常見的損壞狀況，以及處理方法
 	![](../attachment/Clip_2024-11-03_20-36-57.png)
 - 下載燒錄檔案
 	- Github: [GitHub - rogerclarkmelbourne/STM32duino-bootloader: Bootloader for STM32F103 boards, for use with the Arduino\_STM32 repo and the Arduino IDE](https://github.com/rogerclarkmelbourne/STM32duino-bootloader)
-	![](../attachment/Clip_2024-11-03_20-40-36.png)
+		![](../attachment/Clip_2024-11-03_20-40-36.png)
 - 燒錄接線
 	![](../attachment/Pasted%20image%2020241103203152.png)
 - 使用 STM32CubeProg 燒錄
