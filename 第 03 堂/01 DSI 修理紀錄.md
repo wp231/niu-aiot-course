@@ -1,7 +1,6 @@
 # DSI2598+ 修理紀錄
 
 - [Micro USB 腳位脫焊](#micro-usb-%E8%85%B3%E4%BD%8D%E8%84%AB%E7%84%8A)
-	- [排查處理](#%E6%8E%92%E6%9F%A5%E8%99%95%E7%90%86)
 - [USB 裝置無法辨識](#usb-%E8%A3%9D%E7%BD%AE%E7%84%A1%E6%B3%95%E8%BE%A8%E8%AD%98)
 	- [bootloader 燒錄方式](#bootloader-%E7%87%92%E9%8C%84%E6%96%B9%E5%BC%8F)
 - [供電 IC 損壞](#%E4%BE%9B%E9%9B%BB-ic-%E6%90%8D%E5%A3%9E)
@@ -13,7 +12,6 @@ DSI2598+ 常見的損壞狀況，以及處理方法
 
 ![](../attachment/Pasted%20image%2020241103204747.png)
 
-### 排查處理
 判斷脫焊方式，輕微波動 Micro USB 腳位，LED 燈會不斷閃爍，重新使用電烙鐵焊接
 
 ## USB 裝置無法辨識
