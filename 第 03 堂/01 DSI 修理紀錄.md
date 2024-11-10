@@ -84,7 +84,7 @@ DSI2598+ 常見的損壞狀況，以及處理方法
 		![](../attachment/Pasted%20image%2020241103214535.png)
 
 	- 查找異常點的電路設計，找到影響該異常的 IC
-		- [DSI2598p](../使用者手冊/DSI2598P/dsi2598p.pdf) 和 [ME6211C](../使用者手冊/DSI2598P/ME6211.pdf) (供電 IC) 的原理圖
+		- [DSI2598p](../使用者手冊/DSI2598P/原理圖/dsi2598p.pdf) 和 [ME6211C](../使用者手冊/DSI2598P/原理圖/ME6211.pdf) (供電 IC) 的原理圖
 
 			![](../attachment/Pasted%20image%2020241103220107.png)
 
