@@ -143,8 +143,8 @@ OMA SpecWorks 定義了一些標準 物件 ID 和 資源 ID 所代表的意義
 | Security                | 0       | 包含伺服器安全連接相關配置       |
 | Server                  | 1       | 包含伺服器地址、通信參數等資訊   |
 | Device                  | 3       | 提供設備相關資訊，如製造商名稱等 |
-| Firmware Update         | 5       | 支持固件下載和更新管理           |
 | Connectivity Monitoring | 4       | 網絡連接狀態與參數監控           |
+| Firmware Update         | 5       | 支持固件下載和更新管理           |
 | Location                | 6       | 設備的地理位置資訊               |
 
 > 更加詳細的物件資源規範，可以參考
