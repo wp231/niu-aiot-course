@@ -1,17 +1,18 @@
 # CoAP 實例
 
-- [libcoap](#libcoap)
-	- [安裝 libcoap](#%E5%AE%89%E8%A3%9D-libcoap)
-	- [啟動伺服器 (coap-server)](#%E5%95%9F%E5%8B%95%E4%BC%BA%E6%9C%8D%E5%99%A8-coap-server)
-	- [啟動客戶端 (coap-client)](#%E5%95%9F%E5%8B%95%E5%AE%A2%E6%88%B6%E7%AB%AF-coap-client)
-- [Wireshark](#wireshark)
-- [抓包分析](#%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90)
-	- [請求和回覆](#%E8%AB%8B%E6%B1%82%E5%92%8C%E5%9B%9E%E8%A6%86)
-	- [CON 封包](#con-%E5%B0%81%E5%8C%85)
-		- [CoAP 格式](#coap-%E6%A0%BC%E5%BC%8F)
-		- [CoAP 的 Options 字段](#coap-%E7%9A%84-options-%E5%AD%97%E6%AE%B5)
-	- [ACK 回復](#ack-%E5%9B%9E%E5%BE%A9)
-		- [CoAP 的 ACK 回復](#coap-%E7%9A%84-ack-%E5%9B%9E%E5%BE%A9)
+- [CoAP 實例](#coap-實例)
+	- [libcoap](#libcoap)
+		- [安裝 libcoap](#安裝-libcoap)
+		- [啟動伺服器 (coap-server)](#啟動伺服器-coap-server)
+		- [啟動客戶端 (coap-client)](#啟動客戶端-coap-client)
+	- [Wireshark](#wireshark)
+	- [抓包分析](#抓包分析)
+		- [請求和回覆](#請求和回覆)
+		- [CON 封包](#con-封包)
+			- [CoAP 格式](#coap-格式)
+			- [CoAP 的 Options 字段](#coap-的-options-字段)
+		- [ACK 回復](#ack-回復)
+			- [CoAP 的 ACK 回復](#coap-的-ack-回復)
 
 
 本次將使用 libcoap 來建立 CoAP 伺服器和客戶端，並使用 Wireshark 來抓包分析。
@@ -62,7 +63,8 @@ sudo wireshark
 
 發送 **GET** 請求，獲取 **`coap://localhost/time`** 的時間資訊
 
-> Wireshark 選擇環回口
+> Wireshark 選擇 Loopback 網卡
+> 
 > ![](../attachment/Clip_2024-11-23_03-22-07.png)
 
 ### 請求和回覆
